@@ -15,11 +15,11 @@ function SpecialOffer() {
       </div>
 
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
+        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg max-sm:text-[36px] max-sm:leading-[42px]">
           Spezial
           <span className="text-coral-red ">angebot</span>
         </h2>
-        <p className="mt-6 lg:max-w-lg info-text">
+        <p className="mt-6 lg:max-w-lg info-text ">
           Begib dich auf eine Einkaufsreise, die deine Erfahrung mit
           unschlagbaren Angeboten neu definiert. Von erstklassigen
           Auswahlmöglichkeiten bis zu unglaublichen Einsparungen bieten wir
@@ -31,7 +31,7 @@ function SpecialOffer() {
           zu übertreffen. Deine Reise mit uns ist nichts weniger als
           außergewöhnlich.
         </p>
-        <div className="mt-11 flex flex-wrap gap-4">
+        <div className="mt-11 flex flex-wrap gap-4 max-sm:justify-center">
           <Button label="Jetzt kaufen" iconUrl={arrowRight} />
           <Button
             label="Mehr erfahren"
