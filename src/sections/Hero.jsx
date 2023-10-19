@@ -14,7 +14,7 @@ function Hero() {
       id="home"
       className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-52 ">
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x max-sm:pt-[20vh] pt-52 ">
         <p className="text-xl font-montserrat text-coral-red">
           Unsere Sommerkollektionen
         </p>
@@ -29,12 +29,16 @@ function Hero() {
           Entdecken Sie stilvolle Puma Neuheiten, Qualität, Komfort und
           Innovation für Ihr aktives Leben.
         </p>
-        <Button label="Jetzt kaufen" iconUrl={arrowRight} />
+        <div className="flex max-sm:justify-center max-sm:w-full">
+          <Button label="Jetzt kaufen" iconUrl={arrowRight} />
+        </div>
 
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16 ">
+        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16 max-sm:gap-[9vw] max-sm:mt-10 max-sm:justify-center max-sm:text-center ">
           {statistics.map((stat) => (
             <div key={stat.label}>
-              <p className="text-4xl font-palanquin font-bold ">{stat.value}</p>
+              <p className="text-4xl font-palanquin font-bold max-sm:text-[7vw]">
+                {stat.value}
+              </p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {stat.label}
               </p>

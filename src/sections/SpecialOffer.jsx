@@ -5,12 +5,12 @@ import Button from "../components/Button";
 function SpecialOffer() {
   return (
     <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
-      <div className="flex-1">
+      <div className="flex-1 justify-center mt-5">
         <img
           src={offer}
           alt="Angebot Bild"
           width={687}
-          className="object-contain w-full"
+          className="object-contain w-full max-sm:ml-[7vw]"
         />
       </div>
 
