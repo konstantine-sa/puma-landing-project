@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
+  "files.associations": {
+    "*.{css,js,ts,jsx,tsx}": "tailwindcss",
+  },
+
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
